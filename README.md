@@ -1,0 +1,1 @@
+A simple Vue application to put in a docker container for testing helm and kubernetes.
