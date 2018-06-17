@@ -4,8 +4,7 @@ node_js:
   - "node"
 service:
   - docker
-before_install:
-  - npm install
-  - docker build -t grantmcdade/hello-kubernetes .
 script:
+  - npm install
   - npm run build
+  - docker build -t grantmcdade/hello-kubernetes .
