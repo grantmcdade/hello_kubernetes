@@ -1,5 +1,10 @@
+sudu: required
 language: node_js
 node_js:
   - "node"
+service:
+  - docker
+before_install:
+  - docker build -t grantmcdade/hello-kubernetes
 script:
   - npm run build
