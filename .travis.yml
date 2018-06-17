@@ -8,7 +8,7 @@ script:
 - npm install
 - npm run build
 - docker build -t grantmcdade/hello-kubernetes .
-- docker login -u "$DOCKER_USERNAME" --password-stdin
+- echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 - docker push grantmcdade/hello-kubernetes
 env:
   global:
